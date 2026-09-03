@@ -1,0 +1,13 @@
+# 1. Can PowerShell run scripts?
+Get-ExecutionPolicy -List
+$ExecutionContext.SessionState.LanguageMode
+
+# 2. Can it bind a loopback port?
+$l = New-Object System.Net.HttpListener
+$l.Prefixes.Add("http://localhost:8765/")
+$l.Start()
+"Bind OK"
+$l.Stop()
+
+# 3. Can the browser reach Anthropic? (only matters for AI mode)
+Test-NetConnection api.anthropic.com -Port 443

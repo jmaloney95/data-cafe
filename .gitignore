@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Marriott-proprietary pitch materials — not for the public repo
+*.pptx
+Data Cafe*Codefest*
+*Pitch Narrative*
+
+# Source copies of large media (published copies live in docs/assets/)
+/datacafe_screenshot.gif
+/datacafe_screenshot2.gif
+/Data Cafe Logo.png
+Insight_Concierge_Status.docx
